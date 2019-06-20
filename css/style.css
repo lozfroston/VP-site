@@ -1,0 +1,666 @@
+body, html {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	border: none;
+	overflow-x: hidden;
+}
+@font-face {
+	font-family: 'Bariol Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Bariol Regular'), url('bariol_bold-webfont.woff') format('woff');
+}
+/* ------Nav Jessica------ */
+
+/* Container for nav bar */
+
+#flex-container-nav {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #793b6a;
+	color: #fff;
+}
+/* styling boxes inside nav bar container */
+
+.sec-style {
+	margin: 0;
+	flex-grow: 1;
+	padding: 5px;
+	font-family: "Bariol Regular", sans serif;
+}
+.sec-style:hover {
+	color: #F9BF38;
+}
+/* add styling for only first and last element using subclasses inside nav bar 
+-> make the boxes biggest. */
+
+.sec-style:first-child {
+	/* first div with class sec-Style */
+	flex-grow: 2;
+	justify-content: left;
+	padding-left: 30px;
+}
+.sec-style:nth-child(2) {
+	position: relative;
+}
+.deco {
+	/* yellow line under second child */
+	border-radius: 2px;
+	background-color: #F9BF38;
+	width: 130px;
+	height: 4px;
+	position: absolute;
+	top: 153%;
+	left: 0;
+}
+.sec-style:last-child {
+	/* last div with class sec-Style */
+	flex-grow: 2;
+	justify-content: right;
+	align-items: center;
+	padding-right: 30px;
+}
+.item {
+	/* all items in last div concerned */
+	margin: 10px;
+}
+/* embeded containers to handle logo display into the last element */
+
+#logo {
+	display: flex;
+}
+/* Style for icons */
+
+.fas fa-search {
+	color: white;
+}
+/* ----- Page Laurie ------*/
+
+/* #header {
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	background-color: #793b6a;
+	font-size: 12px;
+} */
+
+#hero {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-image: url('https://media.mv.urlaubspiraten.de/images/2015/04/p2yp10pppe552bdfeae40ab8p05187787.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	padding: 180px 0;
+}
+#hero_line {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#hero_left {
+	display: block;
+	width: 50px;
+	padding-left: 50px;
+}
+#hero_middle {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 78%;
+	margin-left: 115px;
+}
+#hero_right {
+	display: block;
+	width: 50px;
+}
+.arrow_grey {
+	height: 90px;
+	width: 53px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+}
+.fa-chevron-left {
+	color: white;
+	margin: 30px 15px;
+}
+.fa-chevron-right {
+	color: white;
+	margin: 30px 15px;
+}
+/* icon for suitcase if theres no image
+.fa-suitcase {
+	color: #f8fc00; 
+background: -webkit-linear-gradient(#fff09b ,#ff8205 , #ff8205);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  	position: absolute;
+  	left: 230px;
+  	top: 121px;
+}
+*/
+
+#hero_mid_top {
+	display: inline-block;
+	width: 120px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+	padding: 4px 10px;
+	margin-top: -70px;
+	text-align: right;
+	box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.5);
+}
+#hero_mid_bottom {
+	display: inline-block;
+	width: 325px;
+	min-height: 180px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+	padding: 5px 15px;
+	margin: 15px 0;
+	line-height: 30px;
+	box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.5);
+}
+h1 {
+	font-family: 'Bariol Regular', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 26px;
+	color: white;
+}
+h2 {
+	font-family: 'Bariol Regular', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	margin: 5px;
+	color: white;
+}
+#deal {
+	position: absolute;
+	height: 40px;
+	width: 130px;
+	left: 210px;
+	top: 120px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e8d3ab+0,ffb41e+38,ffb305+100 */
+	background: #e8d3ab;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8d3ab', endColorstr='#ffb305', GradientType=0);
+	/* IE6-9 */
+	border-radius: 5px;
+	border: none;
+	color: #7a1e00;
+	font-size: 1.2em;
+	font-family: 'Bariol Regular';
+}
+.dot {
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+}
+.dot2 {
+	height: 15px;
+	width: 15px;
+	background-color: #693460;
+	border-radius: 50%;
+	display: inline-block;
+}
+#dots {
+	position: absolute;
+	left: 46%;
+	bottom: 8px;
+}
+.suitcase img {
+	display: inline-block;
+}
+#suitcase_wrap {
+	position: absolute;
+	top: -62px;
+	left: 15px;
+	z-index: 999;
+}
+#search_container {
+	margin: 0 auto;
+	width: 950px;
+	font-family: 'Open Sans', sans-serif;
+}
+p.searchheader {
+	padding: 15px 15px 0 15px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #5b5b5b;
+}
+#search_box {
+	position: relative;
+	padding: 0;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+}
+#search_box ul {
+	text-align: left;
+	padding: 0;
+}
+#search_box li {
+	display: inline-block;
+	margin: 0 4px;
+}
+#search_box input {
+	border: 1px solid #793b6a;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0;
+	width: 150px;
+	font-size: 14px;
+}
+#search_box select {
+	position: relative;
+	border: 1px solid #793b6a;
+	border-radius: 10px;
+	bottom: 0.5px;
+	margin: 0;
+	width: 180px;
+	height: 39px;
+	background-color: #793b6a;
+	color: white;
+	font-size: 14px;
+	appearance: none;
+	-moz-appearance: none;
+}
+#search_box select:last-child {
+	position: relative;
+	border: none;
+	border-radius: 8px;
+}
+input.submit {
+	background-color: #219BC6;
+	border: 1px solid #219BC6 !important;
+	font-family: "Bariol Regular", sans-serif !important;
+	font-weight: 600;
+	font-size: 22px;
+	color: white;
+}
+.submit {
+	border: none;
+}
+p.formtext {
+	font-size: 10px;
+	margin: 0 0 5px 7px;
+	padding: 0;
+	color: #a6a6a6;
+}
+#icon_compass {
+	position: absolute;
+	left: 42px;
+	top: 43px;
+	width: 23px;
+	height: 23px;
+	background-image: url('../images/compass_sprite.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	z-index: 999;
+}
+#icon_loc1 {
+	position: absolute;
+	left: 232px;
+	top: 43px;
+	width: 23px;
+	height: 23px;
+	background-image: url('../images/location_sprite.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	z-index: 999;
+}
+#icon_loc2 {
+	position: absolute;
+	left: 417px;
+	top: 43px;
+	width: 23px;
+	height: 23px;
+	background-image: url('../images/location_sprite.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	z-index: 999;
+}
+#icon_cal {
+	position: absolute;
+	left: 602px;
+	top: 43px;
+	width: 23px;
+	height: 23px;
+	background-image: url('../images/calendar_sprite.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	z-index: 999;
+}
+#advert1 img {
+	border: 1px solid black;
+}
+#advert1 {
+	margin: 20px 0;
+	text-align: center;
+}
+/* ------ Index 2 ------ */
+
+/* Container for nav bar v2 */
+
+#flex-container-nav2 {
+	padding-top: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #793b6a;
+	color: #fff;
+	width: 700px;
+	margin: 0 auto;
+	font-family: 'Bariol Regular', sans-serif;
+	font-size: 5px;
+    font-weight: 100;
+	letter-spacing: -0.1px;
+}
+/* styling boxes inside nav bar container */
+
+.sec-style2 {
+    position: relative;
+	margin: 0;
+	flex-grow: 1;
+	padding: 10px 0 0 5px;
+	font-size: 8px;
+}
+.sec-style3 {
+	margin: 0;
+	flex-grow: 1;
+	padding: 10px 0 0 5px;
+	font-size: 8px;
+	color: #f9bf38;
+}
+#nav_wrap {
+	width: 100%;
+	height: 40px;
+	background-color: #793b6a;
+}
+.deco2 {
+	/* yellow line under second child */
+    position: absolute;
+	border-radius: 2px;
+	background-color: #F9BF38;
+	width: 60px;
+	height: 2px;
+	position: absolute;
+	top: 28px;
+    left: 2px;
+}
+.item2 {
+	/* all items in last div concerned */
+	margin: 0 10px;
+}
+#nav_img {
+	margin-top: -10px;
+	background-image: url("../voyagePirate.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 105px;
+	height: 40px;
+}
+#hero_middle2 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 550px;
+	height: 220px;
+	background-image: url(../images/voyage_malte.png);
+	border: 4px solid white;
+	background-size: 120% 100%;
+	background-position: center;
+}
+#hero2 {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background-image: url('http://www.lauriestanhope.com/simplon/malta.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+.dotnew {
+	height: 7px;
+	width: 7px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+}
+.dot2new {
+	height: 7px;
+	width: 7px;
+	background-color: #693460;
+	border-radius: 50%;
+	display: inline-block;
+}
+#dotsnew {
+	position: absolute;
+	left: 50%;
+	bottom: 4px;
+}
+#hero_line2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#suitcase_wrap2 {
+	position: absolute;
+	top: 53px;
+	left: 32px;
+	z-index: 999;
+}
+#hero_mid_bottom2 {
+	display: inline-block;
+	width: 170px;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+	padding: 5px 15px;
+	margin: 15px 20px 40px 20px;
+	line-height: 30px;
+	box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.5);
+}
+h3 {
+	font-family: 'Bariol Regular', Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 11px;
+	line-height: 18px;
+	letter-spacing: 0.6px;
+	color: white;
+	margin: 3px 0;
+}
+h4 {
+	font-family: 'Bariol Regular', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 8px;
+	margin: 5px;
+	color: white;
+}
+#deal2 {
+	position: absolute;
+	height: 20px;
+	width: 70px;
+	left: 140px;
+	top: 155px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e8d3ab+0,ffb41e+38,ffb305+100 */
+	background: #e8d3ab;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e8d3ab 0%, #ffb41e 38%, #ffb305 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8d3ab', endColorstr='#ffb305', GradientType=0);
+	/* IE6-9 */
+	border-radius: 3px;
+	border: none;
+	color: #7a1e00;
+	font-size: 0.6em;
+	font-family: 'Bariol Regular';
+}
+#hero_mid_top2 {
+	display: inline-block;
+	width: 70px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+	padding: 4px 10px;
+	margin-top: 0;
+	margin-left: 20px;
+	text-align: right;
+	box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.5);
+}
+.arrow_grey2 {
+	height: 50px;
+	width: 33px;
+	border-radius: 5px;
+	background-color: #1e1e21;
+	opacity: 0.9;
+	margin-top: 100px;
+	margin-left: -20px;
+}
+.leftarr {
+	color: white;
+	margin: 30px 15px;
+	margin-left: 8px;
+	margin-top: 18px;
+}
+.rightarr {
+	color: white;
+	margin: 30px 15px;
+	margin-left: 10px;
+	margin-top: 18px;
+}
+/* ------- Murphy --------- */
+
+/*------- Partie de MURPHY ------*/
+
+.produit {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+
+.produit1, .produit2, .produit3, .produit4 {
+	width: 42%;
+	height: 40%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+/* style du boutton*/
+.styled {
+	margin-left: 80px;
+	color: #fff;
+	box-shadow: inset 0 1px 0 0 #a5e054;
+	border-color: #45950a;
+	background-color: #7cd027;
+	background: linear-gradient(to bottom, #7cd027, #60a71d);
+	line-height: inherit;
+	text-align: center;
+	float: none;
+	width: 68%;
+	height: 40px;
+	padding-right: 14px !important;
+	border-right: 30px;
+	border-radius: 10px;
+	font-family: 'Bariol Regular' ,sans-serif;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+/*Création du style de la date et du commentaire*/
+
+#cool {
+font-family: "Open Sans", sans-serif;
+color: #a6a6a6;
+font-size: 12px;
+
+}
+
+.produit h3 {
+position: relative;
+left: -55px;
+top: -13px;
+color: #323232;
+font-size: 25px;
+font-family: 'Bariol Regular', Arial, sans-serif;
+font-weight: 400;
+
+}
+.produit1 {
+position: relative;
+}
+.produit2 {
+position: relative;
+}
+.produit3 {
+position: relative;
+}
+.produit4 {
+position: relative;
+}
+.icon_orange {
+  position: absolute;
+  left: -16px;
+  top: 18px;
+  width: 75px;
+  height: 70px;
+  background-image: url("http://www.lauriestanhope.com/simplon/icon_orange.png");
+  background-size: cover;
+}
+.icon_pink {
+  position: absolute;
+  left: -15px;
+  top: 18px;
+  width: 75px;
+  height: 70px;
+  background-image: url("http://www.lauriestanhope.com/simplon/icon_pink.png");
+  background-size: cover;
+}
